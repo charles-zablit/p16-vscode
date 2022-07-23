@@ -6,8 +6,8 @@
     "publisher": "roby",
     "icon": "assets/icon.png",
     "author": {
-		"name": "roby2014"
-	},
+        "name": "roby2014"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/roby2014/p16-vscode.git"
@@ -19,19 +19,34 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "p16",
-            "aliases": ["p16", "P16"],
-            "extensions": [".S",".s"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "p16",
-            "scopeName": "source.s",
-            "path": "./syntaxes/p16.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "p16",
+                "aliases": [
+                    "p16",
+                    "P16"
+                ],
+                "extensions": [
+                    ".S",
+                    ".s"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "p16",
+                "scopeName": "source.s",
+                "path": "./syntaxes/p16.tmLanguage.json"
+            }
+        ]
     },
     "scripts": {
-        "vscode:prepublish": "npm run build"
+        "vscode:prepublish": "npm run build",
+        "build": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "dependencies": {
+        "typescript": "^4.7.4"
     }
 }

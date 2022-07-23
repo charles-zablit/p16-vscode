@@ -30,5 +30,8 @@
             "scopeName": "source.s",
             "path": "./syntaxes/p16.tmLanguage.json"
         }]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run build"
     }
 }

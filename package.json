@@ -1,0 +1,34 @@
+{
+    "name": "p16",
+    "displayName": "P16",
+    "description": "P16 Assembly extension for VSCode",
+    "version": "0.0.1",
+    "publisher": "roby",
+    "icon": "assets/icon.png",
+    "author": {
+		"name": "roby2014"
+	},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/roby2014/p16-vscode.git"
+    },
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "p16",
+            "aliases": ["p16", "P16"],
+            "extensions": [".S",".s"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "p16",
+            "scopeName": "source.s",
+            "path": "./syntaxes/p16.tmLanguage.json"
+        }]
+    }
+}

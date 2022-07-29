@@ -1,2 +1,11 @@
-node_modules
+node_modules/
+out/
 *.vsix
+.vscode-test
+.DS_Store
+package-lock.json
+old.xml
+chromedriver.exe
+chromedriver
+dist/
+.vscode/

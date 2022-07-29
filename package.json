@@ -21,7 +21,6 @@
     ],      "activationEvents": [
       "onLanguage:p16"],
     "contributes": {
-
         "languages": [
             {
                 "id": "p16",
